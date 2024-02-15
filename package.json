@@ -1,7 +1,20 @@
 {
-  "name": "react-video-sdk-demo",
-  "version": "1.10.7",
-  "private": true,
+  "name": "react-zoom-video",
+  "version": "0.0.1",
+  "author": "Torch",
+  "type": "module",
+  "license": "Apache-2.0",
+  "main": "./dist/react-zoom-video.umd.cjs",
+  "module": "./dist/react-zoom-video.js",
+  "exports": {
+    ".": {
+      "import": "./dist/react-zoom-video.js",
+      "require": "./dist/react-zoom-video.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@ant-design/icons": "4.6.2",
     "@testing-library/jest-dom": "^5.11.9",
@@ -13,13 +26,13 @@
     "crypto-js": "^4.2.0",
     "immer": "^9.0.6",
     "js-base64": "^3.6.0",
-    "jsrsasign": "^10.5.26",
+    "jsrsasign": "^11.1.0",
     "lodash": "^4.17.21",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-draggable": "^4.4.3",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^3.0.1",
     "web-vitals": "1.1.1"
   },
   "scripts": {
@@ -59,16 +72,20 @@
     "@types/uuid": "^9.0.7",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
+    "@vitejs/plugin-react": "^2.0.1",
     "copy-webpack-plugin": "6.2.1",
     "customize-cra": "1.0.0",
     "eslint-config-alloy": "^4.6.2",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.6.2",
-    "react-app-rewired": "2.2.1",
+    "react-app-rewired": "^2.2.1",
     "sass": "1.32.8",
     "sass-loader": "10.1.1",
     "typescript": "^4.3.5",
+    "vite": "^3.0.7",
+    "vite-plugin-svgr": "~4.2.0",
+    "vite-plugin-css-injected-by-js": "^3.4.0",
     "write-file-webpack-plugin": "4.5.1"
   }
 }
